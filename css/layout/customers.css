@@ -1,7 +1,3 @@
-.customers-section {
-  /* padding-top: 120px;
-  padding-bottom: 120px; */
-}
 .customers-list {
   display: flex;
   flex-wrap: wrap;
@@ -11,7 +7,7 @@
   row-gap: 72px;
 }
 .customers-list-item {
-  width: calc((100% - 16) / 2);
+  flex-basis: calc((100% - 16px) / 2);
   height: 88px;
 }
 .customer-link {
@@ -39,4 +35,33 @@
 .customer-link:hover .customer-icon,
 .customer-link:focus .customer-icon {
   fill: var(--pressed-state);
+}
+/* ===========================================TABLET======================================== */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .customers-container {
+    padding-left: 105px;
+    padding-right: 105px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers-list {
+    margin: 0 auto;
+    gap: 72px 24px;
+  }
+  .customers-list-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+  }
+}
+/* =======================================DESKTOP============================================== */
+@media screen and (min-width: 1158px) {
+  .customers-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .customers-list {
+    gap: 24px;
+  }
+  .customers-list-item {
+    max-width: 168px;
+  }
 }

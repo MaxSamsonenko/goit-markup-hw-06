@@ -32,6 +32,9 @@
 
   margin-bottom: 8px;
 }
+.our-team-text {
+  font-weight: 400;
+}
 .socials-list {
   display: flex;
   justify-content: center;
@@ -56,4 +59,18 @@
 }
 .socials-list-icon {
   fill: var(--light-accent);
+}
+/* ===========================================TABLET======================================= */
+@media screen and (min-width: 767px) {
+  .our-team-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 64px;
+  }
+  .team-card {
+    flex-basis: calc((100% - 24px) / 2);
+    margin: 0;
+  }
 }

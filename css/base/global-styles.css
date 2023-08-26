@@ -58,14 +58,28 @@ input {
   padding-left: 16px;
   padding-right: 16px;
 }
+@media screen and (min-width: 767px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .section {
   padding-top: 96px;
   padding-bottom: 96px;
 }
 
 .portfolio-section {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  /* padding-top: 96px;
+  padding-bottom: 120px; */
 }
 .section-list {
   display: flex;
